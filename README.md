@@ -11,9 +11,10 @@ If you have any additions or suggestions, feel free to contribute. Additional re
   - [Camera](#camera)
   - [IMU + Camera](#imu+camera)
 
-<details span>
+<!-- <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+
 **Oct 24, 2024**
 - Add Seeing Invisible Poses...
 
@@ -22,7 +23,7 @@ If you have any additions or suggestions, feel free to contribute. Additional re
 
 **Sept 26, 2024**
 - Initial commit
-</details>
+</details> -->
 <br>
 
 ## Datasets
@@ -37,7 +38,7 @@ Large datasets are the cornerstone of recent advances in computer vision using d
 
 ## Motion Capture
 ### IMU
-##### [SIGGRAPH ASIA, 2018] Deep Inertial Poser: Learning to Reconstruct Human Pose from Sparse Inertial Measurements in Real Time
+#### [SIGGRAPH ASIA, 2018] Deep Inertial Poser: Learning to Reconstruct Human Pose from Sparse Inertial Measurements in Real Time
 **Authors**: Yinghao Huang, Manuel Kaufmann, Emre Aksan, Michael J. Black, Otmar Hilliges, Gerard Pons-Moll
 <details span>
 <summary><b>Abstract</b></summary>
@@ -80,7 +81,7 @@ Real-time human motion reconstruction from a sparse set of (e.g. six) wearable I
 Tracking body pose on-the-go could have powerful uses in fitness, mobile gaming, context-aware virtual assistants, and rehabilitation. However, users are unlikely to buy and wear special suits or sensor arrays to achieve this end. Instead, in this work, we explore the feasibility of estimating body pose using IMUs already in devices that many users own -- namely smartphones, smartwatches, and earbuds. This approach has several challenges, including noisy data from low-cost commodity IMUs, and the fact that the number of instrumentation points on a users body is both sparse and in flux. Our pipeline receives whatever subset of IMU data is available, potentially from just a single device, and produces a best-guess pose. To evaluate our model, we created the IMUPoser Dataset, collected from 10 participants wearing or holding off-the-shelf consumer devices and across a variety of activity contexts. We provide a comprehensive evaluation of our system, benchmarking it on both our own and existing IMU datasets.
 </details>
 
-[📄 Paper](https://arxiv.org/abs/2304.12518) | [💻 Code](https://github.com/FIGLAB/IMUPoser)
+[📄 Paper](https://arxiv.org/abs/2304.12518) | [💻 Code](https://github.com/FIGLAB/IMUPoser) | [✒️ Note](https://www.notion.so/CHI-2023-IMUPoser-1ebb6a7dd763805fb1bff90645517046?pvs=4)
 
 #### [UIST, 2023] SmartPoser: Arm Pose Estimation with a Smartphone and Smartwatch Using UWB and IMU Data
 **Authors**: Nathan DeVrio, Vimal Mollyn, Chris Harrison
@@ -91,6 +92,9 @@ The ability to track a user’s arm pose could be valuable in a wide range of ap
 
 [📄 Paper](https://dl.acm.org/doi/10.1145/3586183.3606821)
 
+#### [CVPR, 2024] Loose Inertial Poser: Motion Capture with IMU-attached Loose-Wear Jacket
+[✒️ Note](https://www.notion.so/CVPR-2024-Loose-Inertial-Poser-1e7b6a7dd76380bf9b3de19c2c261dc1?pvs=4)
+
 #### [CVPR, 2024] DiffusionPoser: Real-time Human Motion Reconstruction From Arbitrary Sparse Sensors Using Autoregressive Diffusion
 **Authors**: Tom Van Wouwe, Seunghwan Lee, Antoine Falisse, Scott Delp, C. Karen Liu
 <details span>
@@ -98,8 +102,16 @@ The ability to track a user’s arm pose could be valuable in a wide range of ap
 Motion capture from a limited number of body-worn sensors, such as inertial measurement units (IMUs) and pressure insoles, has important applications in health, human performance, and entertainment. Recent work has focused on accurately reconstructing whole-body motion from a specific sensor configuration using six IMUs. While a common goal across applications is to use the minimal number of sensors to achieve required accuracy, the optimal arrangement of the sensors might differ from application to application. We propose a single diffusion model, DiffusionPoser, which reconstructs human motion in real-time from an arbitrary combination of sensors, including IMUs placed at specified locations, and, pressure insoles. Unlike existing methods, our model grants users the flexibility to determine the number and arrangement of sensors tailored to the specific activity of interest, without the need for retraining. A novel autoregressive inferencing scheme ensures real-time motion reconstruction that closely aligns with measured sensor signals. The generative nature of DiffusionPoser ensures realistic behavior, even for degrees-of-freedom not directly measured. Qualitative results can be found on our website: this https URL.
 </details>
 
-[📄 Paper](https://arxiv.org/abs/2308.16682)
+[📄 Paper](https://arxiv.org/abs/2308.16682) | [✒️ Note](https://www.notion.so/CVPR-2024-DiffusionPoser-1ebb6a7dd76380ba8cc9def903887f46?pvs=4)
 
+#### [CVPR, 2025] Three-Sensor Inertial Poser (3SIP): Full-Body Motion Generation Using Only Three Inertial Measurement Units
+[✒️ Note](https://www.notion.so/CVPR-2025-Three-Inertial-Poser-1ebb6a7dd7638017a738f90fec1ece22?pvs=4)
+
+#### [CVPR, 2025] UMotion: Uncertainty-driven Human Motion Estimation from Inertial and Ultra-wideband Units
+[✒️ Note](https://www.notion.so/CVPR-2025-UMotion-1ebb6a7dd7638056ab34d033f1a3ab60?pvs=4)
+
+#### [SIGGRAPH, 2025] Transformer IMU Calibrator: Dynamic On-body IMU Calibration for Inertial Motion Capture
+[✒️ Note](https://www.notion.so/SIGGRAPH-2025-Transformer-IMU-Calibrator-1e7b6a7dd76380168554dcc3d85587bb?pvs=4)
 ### Camera
 
 #### [CVPR, 2016] Seeing Invisible Poses: Estimating 3D Body Pose from Egocentric Video
